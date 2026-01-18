@@ -24,9 +24,9 @@ The recommended way to install `rvs` is using **pipx**. This ensures the tool is
   (Note: Close and restart your cmd/PowerShell after this)
 
 ### 2. Install rvs 
-- **Clone the repository and install it globally, run:**
+- **Clone the repository in your machine and install it globally, run:**
      ```bash
-     git clone [https://github.com/hitesh-mulwani/rvs-tool.git](https://github.com/hitesh-mulwani/rvs-tool.git)
+     git clone https://github.com/hitesh-mulwani/rvs-tool.git
      cd rvs-tool
      pipx install .
      ```
@@ -45,26 +45,37 @@ Once installed via `pipx`, the `rvs` command works anywhere you have a terminal:
 
 - **IDE Terminals:** Integrated terminals inside VS Code, IntelliJ, PyCharm, etc.
 
--- **Any Directory:** You can use it in your Java/Cpp/Python projects, WebDev folders, or personal notes folders,etc.
+- **Any Directory:** You can use it in your Java/Cpp/Python projects, WebDev folders, or personal notes folders,etc.
 
 ## Usage
 1. **Initialize tracking in your root directory (any folder in which you want to track you notes files):**
-     Command: rvs init
+     ```bash
+     rvs init
+     ```
 
 2. **Add a file(in which you have taken notes) to start the tracking cycle (1, 3, 7, 14 days):**
-     Command: rvs add file_name
-     , eg: rvs add arrays.txt
+     ```bash
+     rvs add file_name
+     ```
+     (eg: rvs add arrays.txt)
 
 3. **Check what you need to revise today:** 
-     Command: rvs status  (run this command in the root directory, to see a table listing all the notes files and their revision status)
+     ```bash
+     rvs status
+     ```  
+     (run this command in the root directory, to see a table listing all the notes files and their revision status)
 
 4. **Complete a revision session, mark it done and push it further the tracking cycle:**  
-     Command: rvs done file_name
-     , eg: rvs done arrays.txt
+     ```bash
+     rvs done file_name
+     ```
+     (eg: rvs done arrays.txt)
 
 5. **Remove a file from tracking cycle:**
-     Command: rvs remove file_name
-     , eg: rvs remove arrays.txt
+     ```bash
+     rvs remove file_name
+     ```
+     (eg: rvs remove arrays.txt)
 
 ## How it works
 `rvs` uses a simplified version of the Leitner System. When you mark a note as done, it schedules the next review based on increasing intervals. 
@@ -77,4 +88,4 @@ Stage 3: +7 Days
 
 Stage 4: +14 Days 
 
-. After **4** successful reviews, the note is marked as **MASTERED**.
+After **4** successful reviews, the note is marked as **MASTERED**.
