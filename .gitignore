@@ -1,0 +1,12 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+src/*.egg-info/
+
+# Personal data (Don't share your actual notes database)
+.rvs/
+
+# Build artifacts
+dist/
+build/
