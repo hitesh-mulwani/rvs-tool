@@ -4,7 +4,9 @@ from rich.console import Console
 from rich.table import Table
 from .core import storage, scheduler
 
-app = typer.Typer(help="Spaced Repetition CLI for your learning notes.")
+app = typer.Typer(
+    help="rvs (Revise) is a lightweight CLI tool that automates your revision plan. It tells you exactly when to review your notes using a scientifically-backed 1-3-7-14 day cycle, moving knowledge from your short-term memory to long-term mastery."
+)
 console = Console()
 
 @app.command()
