@@ -1,13 +1,13 @@
 # rvs: Never Forget What You Learn
 
-> **The CLI tool that schedules your revision so you actually remember your notes.**
+> **The CLI tool that schedules your revision so you actually remember what you studied and revisit your notes.**
 
 ### 🧠 The Problem
 > **"I read it, I understood it, but a week later... I forgot it."**
 As developers, we study multiple topics regularly in subjects like DSA, System Design, Development but without a plan to revisit them, we forget most of it within a week.
 
 ### ✅ The Solution
-`rvs` (Revise) is a lightweight CLI that automates your revision plan. It tells you exactly **when** to review your notes using a scientifically-backed 1-3-7-14 day cycle, moving knowledge from your short-term memory to long-term mastery.
+> `rvs` (Revise) is a lightweight CLI that automates your revision plan. It tells you exactly **when** to review your notes using a scientifically-backed 1-3-7-14 day cycle, moving knowledge from your short-term memory to long-term mastery.
 
 ## How it works
 `rvs` uses a simplified version of the Leitner System. When you mark a notes file as done, it schedules the next revision based on increasing intervals. 
@@ -75,7 +75,7 @@ Once installed via `pipx`, the `rvs` command works anywhere you have a terminal:
      ```bash
      rvs add file_name
      ```
-     (eg: rvs add arrays.txt)
+     (eg: rvs add arrays_notes.txt)
 
 3. **Check what you need to revise today:** 
      ```bash
@@ -87,12 +87,12 @@ Once installed via `pipx`, the `rvs` command works anywhere you have a terminal:
      ```bash
      rvs done file_name
      ```
-     (eg: rvs done arrays.txt)
+     (eg: rvs done arrays_notes.txt)
 
 5. **Remove a file from tracking cycle:**
      ```bash
      rvs remove file_name
      ```
-     (eg: rvs remove arrays.txt)
+     (eg: rvs remove arrays_notes.txt)
 
 
