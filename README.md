@@ -1,8 +1,26 @@
-# rvs: The Memory-Aware CLI for Developers
+# rvs: Never Forget What You Learn
 
-`rvs` (Revise) is a lightweight CLI tool designed for developers to master new concepts through **Spaced (1,3,7,14) Repetition Revision**. Stop forgetting what you learn in DSA, System Design, Development, or any other learning domain where you prepare notes.
+> **The CLI tool that schedules your revision so you actually remember your notes.**
 
+### 🧠 The Problem
+> **"I read it, I understood it, but a week later... I forgot it."**
+As developers, we study multiple topics regularly in subjects like DSA, System Design, Development but without a plan to revisit them, we forget most of it within a week.
 
+### ✅ The Solution
+`rvs` (Revise) is a lightweight CLI that automates your revision plan. It tells you exactly **when** to review your notes using a scientifically-backed 1-3-7-14 day cycle, moving knowledge from your short-term memory to long-term mastery.
+
+## How it works
+`rvs` uses a simplified version of the Leitner System. When you mark a notes file as done, it schedules the next revision based on increasing intervals. 
+
+Stage 1: +1 Day 
+
+Stage 2: +3 Days 
+
+Stage 3: +7 Days 
+
+Stage 4: +14 Days 
+
+After **4** successful revisions, the note is marked as **MASTERED**.
 
 ## Installation
 
@@ -77,15 +95,4 @@ Once installed via `pipx`, the `rvs` command works anywhere you have a terminal:
      ```
      (eg: rvs remove arrays.txt)
 
-## How it works
-`rvs` uses a simplified version of the Leitner System. When you mark a note as done, it schedules the next review based on increasing intervals. 
 
-Stage 1: +1 Day 
-
-Stage 2: +3 Days 
-
-Stage 3: +7 Days 
-
-Stage 4: +14 Days 
-
-After **4** successful reviews, the note is marked as **MASTERED**.
