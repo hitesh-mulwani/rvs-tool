@@ -4,29 +4,30 @@
 
 ### 🧠 The Problem
 > **"I read it, I understood it, but a week later... I forgot it."**
-As developers, we study multiple topics regularly in subjects like DSA, System Design, Development but without a plan to revisit them, we forget most of it within a week.
+As developers, we study multiple topics regularly in subjects like DSA, System Design, and Development, but without a plan to revisit them, we forget most of it within a week.
 
 ### ✅ The Solution
-> `rvs` (Revise) is a lightweight CLI tool that automates your revision plan. It tells you exactly **when** to review your notes using a scientifically-backed 1-3-7-14 day cycle, moving knowledge from your short-term memory to long-term mastery.
+`rvs` (Revise) is a lightweight CLI tool that automates your revision plan. It tells you exactly **when** to review your notes using a scientifically-backed 1-3-7-14 day cycle, moving knowledge from your short-term memory to long-term mastery.
+
+
 
 ## How it works
-`rvs` uses a simplified version of the Leitner System. When you mark a notes file as done, it schedules the next revision based on increasing intervals. 
+`rvs` uses a simplified version of the **Leitner System**. When you mark a notes file as done, it schedules the next revision based on increasing intervals:
 
-Stage 1: +1 Day 
+* **Stage 1:** +1 Day 
+* **Stage 2:** +3 Days 
+* **Stage 3:** +7 Days 
+* **Stage 4:** +14 Days 
 
-Stage 2: +3 Days 
+After **4** successful revisions, the note is marked as **MASTERED** ✅.
 
-Stage 3: +7 Days 
-
-Stage 4: +14 Days 
-
-After **4** successful revisions, the note is marked as **MASTERED**.
+---
 
 ## Installation
 
 The recommended way to install `rvs` is using **pipx**. This ensures the tool is available globally and handles your system PATH automatically without requiring administrator rights.
 
-### 1. Install pipx (If not already installed, run:)
+### 1. Install pipx (If not already installed)
 - **Linux / macOS:**
   ```bash
   python3 -m pip install --user pipx
@@ -54,7 +55,7 @@ The recommended way to install `rvs` is using **pipx**. This ensures the tool is
      ```bash
      rvs --help
      ```
-     (If you see the rvs help menu, you are ready to go!)
+     (If you see the a menu popup in terminal with options and commands, rvs tool is successfully installed on your machine!)
 
 ## Universal Compatibility
 Once installed via `pipx`, the `rvs` command works anywhere you have a terminal:
@@ -66,30 +67,40 @@ Once installed via `pipx`, the `rvs` command works anywhere you have a terminal:
 - **Any Directory:** You can use it in your Java/Cpp/Python projects, WebDev folders, or personal notes folders,etc.
 
 ## Usage
-1. **Initialize tracking in your root directory (any folder in which you want to track you notes files):**
+
+### 1. Setup
+- **Initialize tracking in your root directory (any folder in which you want to track you notes files):**
      ```bash
      rvs init
      ```
 
-2. **Add a file(in which you have taken notes) to start the tracking cycle (1, 3, 7, 14 days):**
+- **Add a file(in which you have taken notes) to start the tracking cycle (1, 3, 7, 14 days):**
      ```bash
      rvs add file_name
      ```
      (eg: rvs add arrays_notes.txt)
 
-3. **Check what you need to revise today:** 
+### 2. Daily Workflow
+- **Check what you need to revise today:** 
      ```bash
-     rvs status
-     ```  
-     (run this command in the root directory, to see a table listing all the notes files and their revision status)
+     rvs due
+     ```
+     (This shows only the files that are Due Today or Overdue.)
 
-4. **Complete a revision session, mark it done and push it further the tracking cycle:**  
+- **Complete a revision session, mark it done and move file to next stage:**  
      ```bash
      rvs done file_name
      ```
      (eg: rvs done arrays_notes.txt)
 
-5. **Remove a file from tracking cycle:**
+### 3. Monitoring
+- **View the full schedule of all tracked notes:** 
+     ```bash
+     rvs status
+     ```  
+     (run this command in the root directory (rvs initialized), to see a table listing all the notes files and their revision status)
+
+- **Remove a file from tracking cycle:**
      ```bash
      rvs remove file_name
      ```
