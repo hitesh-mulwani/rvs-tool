@@ -23,14 +23,16 @@ The recommended way to install `rvs` is using **pipx**. This ensures the tool is
   ```
   (Note: Close and restart your cmd/PowerShell after this)
 
-### 2. Install rvs (Clone the repository and install it globally, run:)
+### 2. Install rvs 
+- **Clone the repository and install it globally, run:**
      ```bash
      git clone [https://github.com/hitesh-mulwani/rvs-tool.git](https://github.com/hitesh-mulwani/rvs-tool.git)
      cd rvs-tool
      pipx install .
      ```
 
-### 3. Verify Installation (To check if the tool is installed successfully, run:)
+### 3. Verify Installation 
+- **To check if the tool is installed successfully, run:**
      ```bash
      rvs --help
      ```
