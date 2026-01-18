@@ -58,8 +58,8 @@ def status():
 
     table = Table(title="Revision Schedule")
     table.add_column("File", style="cyan")
-    table.add_column("Stage", justify="center")
     table.add_column("Status", justify="center")
+    table.add_column("Stage", justify="center")
     table.add_column("Due Date", justify="center")
 
     for file, info in db.items():
@@ -81,9 +81,9 @@ def status():
             elif status_label == "UPCOMING": color = "blue"
 
         table.add_row(
-            file, 
-            display_stage, 
-            f"[{color}]{status_label}[/{color}]", 
+            file,
+            f"[{color}]{status_label}[/{color}]",
+            display_stage,  
             display_date
         )
 
